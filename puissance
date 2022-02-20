@@ -1,0 +1,17 @@
+def saiasirN():
+    n= int(input("Doner N : "))
+    while not(2<n<100):
+        n = int(input("Doner N (2<N<100) : "))
+    return n
+
+puissance=int(input("Donner la puissance : "))
+
+def puis(n,puissance):
+    nb=1
+    for i in range(puissance):
+        nb=nb*n
+    return nb
+
+
+n=saiasirN()
+print(puis(n,puissance))
